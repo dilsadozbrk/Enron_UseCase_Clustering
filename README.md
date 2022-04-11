@@ -13,9 +13,9 @@
 
 ### Daily Roadmap
 Day 1 → Goal: Data Exploration + Initial Experimentation
-- [X] Convert all email files into one raw csv - Dilsad and Aditya
-- [X] Extract to, from, subject, and message info from emails - Fortune
-- [X] Clean message body - Nemish
+- [] Convert all email files into one raw csv - Dilsad and Aditya
+- [] Extract to, from, subject, and message info from emails - Fortune
+- [] Clean message body - Nemish
 
 Day 2
 
