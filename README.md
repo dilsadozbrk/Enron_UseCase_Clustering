@@ -7,4 +7,5 @@
 []create new columns
 []Explore more
 []Save csv file (smaller one)
+[x]Pair Programming with Nemish
 []Try clustering
