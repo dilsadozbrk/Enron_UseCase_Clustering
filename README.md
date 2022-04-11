@@ -2,6 +2,7 @@
 ## Global Roadmap
 
 | Data Selection | Data Pre-processing | Clustering | Visualization |
+| -------------- | ------------------- | ---------- | ------------- |
 | Choose relevant folders and parts of emails to focus on | Email content to be cleaned & identify unique keywords | K-Means or Hierarchical Clustering & Topic Modelling | Dropdowns for high-level and low-level topics |
 | Result: csv with raw info | Result: matrix containing unique keywords | Result: features/topics and resulting emails | Result: Relevant emails displayed to user based on topic selection
 
