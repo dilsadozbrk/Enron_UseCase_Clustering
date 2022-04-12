@@ -19,11 +19,23 @@ Day 1 → Goal: Data Exploration + Initial Experimentation
 - [] Clean message body - Nemish
 
 Day 2 --> Goal: Pre-process data and first iteration of clustering
-- [] Clean message body - Nemish & Fortune
-- [] Clustering methods first iteration & discussion - Dilsad & Aditya
+- [X] Clean message body - Nemish & Fortune
+- [X] Streamlit first iteration - Fortune
+- [X] Initial implementation of LDA - Dilsad & Aditya
 
-Day 3
+Issue faced:
+1. Several errors raised when implementting Mallet-LDA package - Dilsad & Aditya
+2. Streamlit installation issue - Fortune
+3. Preprocessing code not optimized so extended execution time - Nemish
+
+Day 3 --> Goal: Extract emails based on topics
+- [] Figure out how to extract emails based on topics - Dilsad & Aditya  
+- [] Display extracted emails on Streamlit (dependency on above step) - Fortune
+- [] Complete preprocessing code optimization - Nemish
 
 Day 4
 
 Day 5
+
+### Ideas
+1. User can provide keyword and synonyms could be used to display relevant emails
