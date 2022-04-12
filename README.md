@@ -14,11 +14,13 @@
 
 ### Daily Roadmap
 Day 1 → Goal: Data Exploration + Initial Experimentation
-- [] Convert all email files into one raw csv - Dilsad and Aditya
-- [] Extract to, from, subject, and message info from emails - Fortune
+- [X] Convert all email files into one raw csv - Dilsad and Aditya
+- [X] Extract to, from, subject, and message info from emails - Fortune, Dilsad, Aditya
 - [] Clean message body - Nemish
 
-Day 2
+Day 2 --> Goal: Pre-process data and first iteration of clustering
+- [] Clean message body - Nemish & Fortune
+- [] Clustering methods first iteration & discussion - Dilsad & Aditya
 
 Day 3
 
