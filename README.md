@@ -2,10 +2,16 @@
 ### User case
 
 ## To Do
+### monday (April 11)
 [x]Start exploring Kaggle csv
 [x]Separate From,Date,To,From, Body
-[]create new columns
-[]Explore more
-[]Save csv file (smaller one)
-[x]Pair Programming with Nemish
-[]Try clustering
+[X]create new columns
+[X]Explore more
+[X]Save csv file (smaller one)
+[X]Pair Programming with Nemish
+[X]Try clustering
+
+### tuesday (April 12)
+[X]Debrief
+[]first test version streamlit
+    -issue with pip install (lost 1h30)
