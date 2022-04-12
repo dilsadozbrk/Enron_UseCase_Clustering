@@ -13,5 +13,7 @@
 
 ### tuesday (April 12)
 [X]Debrief
-[]first test version streamlit
-    -issue with pip install (lost 1h30)
+[X]first test version streamlit
+    -issue with pip install (lost 1h30) (impossible to use it)
+[]debrief
+[]second test version streamlit

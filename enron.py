@@ -77,7 +77,7 @@ def get_words_list(body:str) -> List[str]:
     This function is kinda of manual tokenization
     """
     pattern = "\\S+"
-    my_list = re.findall(pattern,test)
+    my_list = re.findall(pattern,body)
     my_string = " ".join(my_list)
     pattern = "\\w+"
     my_list = re.findall(pattern,my_string)
@@ -121,7 +121,7 @@ def clean_word(body:List[str]) -> List[str]:
 def create_document_term_matrix(body):
     cv = CountVectorizer()
     X = cv.fit(body)
-    my_columns = X.get_feature_names_out()
+    my_columns = X.get_feature_names()
     X = cv.transform(body)
     my_values = X.toarray()
     df = pd.DataFrame(my_values,columns=my_columns)
