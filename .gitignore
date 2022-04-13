@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+Tf-idf.ipynb
+tf_results.txt
+lda_model.jl
+/env
