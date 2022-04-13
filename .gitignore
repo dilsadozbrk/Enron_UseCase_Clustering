@@ -135,4 +135,5 @@ k-means-exemple.ipynb
 /maildir/
 /env-clustering
 emails.csv
+emails-short.csv
 emails-small.csv

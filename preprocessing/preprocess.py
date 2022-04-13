@@ -35,6 +35,8 @@ def remove_stopwords(text):
     """
     Function to remove stopwords.
     """
+
+    print
     stop_words = nltk.corpus.stopwords.words('english')
     stop_words.extend(['from', 'subject', 're', 'edu', 'use', 'www'])
     return [[word for word in doc if word not in stop_words] for doc in text]
@@ -75,8 +77,11 @@ def preprocess_emails():
     # Convert sentences to words --> Try to optimize this!!
     data_words = list(tqdm(sent_to_words(data_bodies[:10000])))
     #print(data_words[:2])
-    print("Sentences converted to words")
+    
+    with open('data/data_word_list.pkl', 'wb') as f:
+        pickle.dump(data_words, f)
 
+    print("Sentences converted to words")
     # Remove stop words
     data_words_nostops = list(tqdm(remove_stopwords(data_words)))
     #print(data_words_nostops)
@@ -96,7 +101,7 @@ def preprocess_emails():
     #print(data_lemmatized[:2])
     print("Lemmatization done")
 
-    with open('data/word_list.pkl', 'wb') as f:
+    with open('data/lemmatized_word_list.pkl', 'wb') as f:
         pickle.dump(data_lemmatized, f)
 
 
