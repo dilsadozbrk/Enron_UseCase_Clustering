@@ -29,11 +29,19 @@ Issue faced:
 3. Preprocessing code not optimized so extended execution time - Nemish
 
 Day 3 --> Goal: Extract emails based on topics
-- [] Figure out how to extract emails based on topics - Dilsad & Aditya  
-- [] Display extracted emails on Streamlit (dependency on above step) - Fortune
-- [] Complete preprocessing code optimization - Nemish
+- [X] Figure out how to extract emails based on topics - Dilsad & Aditya  
+- [X] Display extracted emails on Streamlit (dependency on above step) - Fortune
+- [X] Complete preprocessing code optimization - Aditya & Nemish
+- [X] Pipeline brainstorming
+
+Issued faced:
+1. Processing power of machines
 
 Day 4
+- [] Run model on entire dataset to get topics & tokens - Dilsad/Aditya
+- [] Feed topics & tokens to Streamlit - Fortune
+- [] Create dataframe with topics, tokens, and emails - Fortune
+- [] Create a structure for project pipeline - Nemish
 
 Day 5
 
