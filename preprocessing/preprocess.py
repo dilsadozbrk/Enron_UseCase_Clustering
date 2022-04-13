@@ -67,7 +67,7 @@ def preprocess_emails():
     """
     Main function in preprocess script to clean emails message body
     """
-    df = pd.read_csv("data/emails.csv")
+    df = pd.read_csv("emails.csv")
 
     data_bodies = df['Body'].values.tolist()
     #print(data[:2])
