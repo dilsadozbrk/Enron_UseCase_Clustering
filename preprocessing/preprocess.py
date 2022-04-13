@@ -73,7 +73,7 @@ def preprocess_emails():
     #print(data[:2])
 
     # Convert sentences to words --> Try to optimize this!!
-    data_words = list(tqdm(sent_to_words(data_bodies)))
+    data_words = list(tqdm(sent_to_words(data_bodies[:10000])))
     #print(data_words[:2])
     print("Sentences converted to words")
 
