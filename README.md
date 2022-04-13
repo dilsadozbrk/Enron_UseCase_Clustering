@@ -12,12 +12,12 @@
 [X]Try clustering
 
 ### tuesday (April 12 2022)
-[X]Debrief
-[X]first test version streamlit
+- [X]Debrief
+- [X]first test version streamlit
     -issue with pip install (lost 1h30) (impossible to use it)
-[X]debrief
-[]read about the model
-[]working with Nemish to update the code
+- [X]debrief
+- []read about the model
+- []working with Nemish to update the code
 
 ### tuesday (April 13 2022)
-[]second test version streamlit
+-[]second test version streamlit

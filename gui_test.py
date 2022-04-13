@@ -34,7 +34,7 @@ Date = emails["Date"][option_email]
 To = emails["To"][option_email]
 Subject = emails["Subject"][option_email]
 
-st.markdown(f"#### Original email ({option_email})")
+st.markdown(f"#### Original email ({option_email})")#change to subject
 st.markdown(f"##### From : {From}")
 st.markdown(f"##### Date : {Date}")
 st.markdown(f"##### To : {To}")
