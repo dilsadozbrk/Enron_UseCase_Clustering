@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+/maildir/
+/env-clustering-37
+/env-clustering/
+emails.csv
+/Enron_UseCase_Clustering/
+k-means-exemple.ipynb
+emails-small.csv
+1.clustering_with_sklearn.ipynb
+2.clustering_drills.ipynb
