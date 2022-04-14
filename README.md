@@ -12,11 +12,16 @@
 2. Split dataset into chunks
 3. High-level topics → displayed on command line (later iterations → sub-topics + streamlit)
 
+### Program Structure
+`
+
+`
+
 ### Daily Roadmap
 Day 1 → Goal: Data Exploration + Initial Experimentation
 - [X] Convert all email files into one raw csv - Dilsad and Aditya
 - [X] Extract to, from, subject, and message info from emails - Fortune, Dilsad, Aditya
-- [X] Clean message body - Nemish
+- [] Clean message body - Nemish
 
 Day 2 --> Goal: Pre-process data and first iteration of clustering
 - [X] Clean message body - Nemish & Fortune
@@ -38,12 +43,18 @@ Issued faced:
 1. Processing power of machines
 
 Day 4
-- [] Run model on entire dataset to get topics & tokens - Dilsad/Aditya
-- [] Feed topics & tokens to Streamlit - Fortune
-- [] Create dataframe with topics, tokens, and emails - Fortune
-- [] Create a structure for project pipeline - Nemish
+- [X] Create pickle file for preprocessed words & model - Dilsad, Aditya
+- [X] Run model on entire dataset to get topics & tokens - Dilsad, Aditya
+- [X] Improve Streamlit interface - Fortune
+- [X] Create dataframe with topics, tokens, and emails - Dilsad, Aditya, Nemish
+- [X] Understand code implementation - Nemish
+
+Issued faced:
+1. Time to generate pickle files
 
 Day 5
+1. [] Use final dataframe to visualize results on Streamlit
+2. [] Prepare and practice presentation
 
 ### Ideas
 1. User can provide keyword and synonyms could be used to display relevant emails
