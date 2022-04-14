@@ -130,9 +130,27 @@ def create_document_term_matrix(body):
 def get_top_10_dt_matrix(df):
     return list(df.sum().sort_values(ascending=False).head(10).index.values)
 
-def get_number_emails(emails):
-    return list(emails.index)
+def get_number_emails(emails:pd.DataFrame) ->Dict:
+    my_list = []
+    
+    for counter,elem in enumerate(emails["Subject"]):
+        my_list.append(f"email n°{counter} : {elem}")
+    my_dict = {}
+    counter = 0
 
+    for elem in my_list:
+        my_dict[counter] = elem
+        counter += 1
+
+    return my_dict
+
+def convert_tuples_to_dict(list_tuples):
+    counter = 0
+    my_dict = {}
+    for elem in list_tuples:
+        my_dict[counter] = elem[1]
+        counter += 1
+    return my_dict
 
 if __name__ == "__main__":
 
