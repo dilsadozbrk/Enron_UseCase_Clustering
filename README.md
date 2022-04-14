@@ -16,7 +16,7 @@
 Day 1 → Goal: Data Exploration + Initial Experimentation
 - [X] Convert all email files into one raw csv - Dilsad and Aditya
 - [X] Extract to, from, subject, and message info from emails - Fortune, Dilsad, Aditya
-- [] Clean message body - Nemish
+- [X] Clean message body - Nemish
 
 Day 2 --> Goal: Pre-process data and first iteration of clustering
 - [X] Clean message body - Nemish & Fortune
