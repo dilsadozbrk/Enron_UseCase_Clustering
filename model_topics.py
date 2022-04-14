@@ -13,7 +13,7 @@ import pyLDAvis.gensim_models as gensimvis
 import pickle
 
 
-with open('preprocessing/data/lemmatized_word_list.pkl', 'rb') as file:
+with open('preprocessing/keywords.pkl', 'rb') as file:
     data = pickle.load(file)
 
 
@@ -67,11 +67,13 @@ def topic_words_dic(ldamodel, num_topics, id2word):
         topic_words.append([id2word[pair[0]] for pair in tt])
         topic_token_dict[i] = topic_words[i] 
     print(topic_token_dict)
+    with open('topic_dict.pkl', 'wb') as f:
+        pickle.dump(topic_token_dict, f)
 
     
-lda_model(corpus, id2word, 8)
+#lda_model(corpus, id2word, 8)
 lda = joblib.load("model.pkl")
-model_score(lda, corpus, data, id2word)    
+#model_score(lda, corpus, data, id2word)    
 #visualization(lda, corpus, id2word)
 topic_words_dic(lda, 8, id2word)
 
