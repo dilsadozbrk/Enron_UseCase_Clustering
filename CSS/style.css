@@ -1,0 +1,42 @@
+.css-18e3th9 {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.css-1d391kg {
+    padding-top: 3.5rem;
+    padding-right: 1rem;
+    padding-bottom: 3.5rem;
+    padding-left: 1rem;
+}
+body {background-color: blue;color:yellow}
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+div.css-v37k9u.e16nr0p33 {
+    color:yellow;
+}
+
+span.css-10trblm.e16nr0p30 {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg,rgb(2,0,36,1)0%,rgb(9,116,121,1)25%,rgb(0,212,255,1)100%);
+}
+
+
+/*body {
+    background-color: blue;
+    color:yellow
+}*/
+
+/*
+div.stApp.streamlit-wide.css-ffhzg2.eczokvf0 {
+    background-color: blue;
+}*/
+
+/*
+div.appview-container.css-1wrcr25.egzxvld4 {
+    background-color: white;
+}*/
+
