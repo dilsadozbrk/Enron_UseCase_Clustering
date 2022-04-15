@@ -9,8 +9,9 @@ nltk.download('stopwords')
 
 
 def get_all_tokens_from_mails():
-    with open('data/word_list.pkl', 'rb') as file:
+    with open('./data/model.pkl', 'rb') as file:
         data = pickle.load(file)
+    print("DATA :",data.get_topics())
     return data
 
 

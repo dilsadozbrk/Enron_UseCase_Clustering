@@ -11,7 +11,7 @@ from typing import List,Dict
 
 @st.cache
 def read_my_csv():
-    emails = pd.read_csv("data/data_10k.csv")   
+    emails = pd.read_csv("data/full_emails.csv")   
     return emails 
 
 @st.cache
@@ -26,6 +26,12 @@ def initiate_dataframe():
     emails = remove_nan_subject(emails)
     return list_emails,emails
 
+#@st.cache
+def create_topic_dict():
+    with open("./data/topic_dict.pkl","rb") as file:
+        data_dict = pickle.load(file)
+        return data_dict
+
 
 st.set_page_config(layout="wide")
 load_css("CSS/style.css")
@@ -37,7 +43,9 @@ list_subject:List = []
 my_options:List = []
 list_emails:List = []
 my_list:List = []
-menu_graph = "Graph - LDA"
+my_topics = data_dict
+list_topic = my_topics.keys()
+menu_graph = "Graph - Latent Dirichlet Allocation"
 menu_investigation = "Investigation"
 menu_history = "History"
 menu_contact = "Contact"
@@ -53,8 +61,12 @@ list_subject = [list_emails[number]for number in list_emails]
 
 
 with st.sidebar:
+    st.image("./images/sec2.png")
     option_menu = st.selectbox(label="Menu",key="option-menu",options=my_menu)
-    pass
+    with st.expander("Description"):
+        st.markdown("This tool using machine learning will allow you to sort more efficiently to help you in your research task")
+    st.image("./images/Enron-logo.png")
+    
 
 if option_menu == menu_investigation:
 
@@ -65,11 +77,10 @@ if option_menu == menu_investigation:
     column_left,column_right = st.columns(2)
 
     with column_left:
-        option = st.selectbox(label="topic number",key="first-selection",options=data_dict.keys())
+        option = st.selectbox(label="topic number",key="first-selection",options=list_topic)
 
     with column_right:
-        #list_tokens = get_tokens_by_topic(vis,option)
-        option_token = st.selectbox(label="tokens",key="second-selection",options=data_dict[option])        
+        option_token = st.selectbox(label="tokens",key="second-selection",options=my_topics[option])        
         
     list_emails = get_list_email_by_token(option_token,emails)
     list_subject = get_dic_subject(list_emails,emails)
@@ -100,12 +111,21 @@ elif option_menu == menu_graph:
         load_text("./text/LDA-description.txt")
 
 elif option_menu == menu_history:
+    with st.sidebar:
+        with st.expander("More"):
+            st.markdown("The Enron scandal, or Enron affair, is a case of fraud and financial manipulation discovered in 2001, which resulted in the bankruptcy of the Enron company, a time seventh capitalization of the United States, and in the dismantling and the de facto disappearance of his listener Andersen.")
+        
+
     load_css("CSS/style-history.css")
     st.markdown("## History of Enron")
-    with st.expander("Explanation"):
+    with st.expander("Introduction"):
         load_text("./text/history.txt")
+        st.image("./images/Ken_Lay.jpg")
 
 elif option_menu == menu_contact:
+    with st.sidebar:
+        with st.expander("More"):
+            st.markdown("Here you will find the team that developed this project.")
     #load_css("CSS/style.css")
     st.markdown("## Becode Bruxelles")
     st.markdown("## Promotion Bouman4")

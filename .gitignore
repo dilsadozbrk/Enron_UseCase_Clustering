@@ -143,3 +143,5 @@ test.py
 main.ipynb
 /data/data_10k.csv
 /data/emails-keywords.csv
+/archives/
+/data/full_emails.csv
