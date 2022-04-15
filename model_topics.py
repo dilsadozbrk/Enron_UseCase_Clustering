@@ -11,7 +11,7 @@ from gensim import  models
 import pyLDAvis
 import pyLDAvis.gensim_models as gensimvis
 import pickle
-
+from tqdm import tqdm
 
 with open('preprocessing/keywords.pkl', 'rb') as file:
     data = pickle.load(file)
@@ -75,7 +75,16 @@ def topic_words_dic(ldamodel, num_topics, id2word):
 lda = joblib.load("model.pkl")
 #model_score(lda, corpus, data, id2word)    
 #visualization(lda, corpus, id2word)
-topic_words_dic(lda, 8, id2word)
+#topic_words_dic(lda, 8, id2word)
 
 
+topic_num = []
+# Get main topic in each document
+for i, row in enumerate(tqdm(lda[corpus])):
+    row = sorted(row[0], key=lambda x: x[1], reverse=True)
+    topic_num.append(row[0][0])
+print(len(topic_num))
 
+df = pd.read_csv("preprocessing/emails-keywords.csv")
+df['Topic Numbers'] = topic_num
+df.to_csv("FULL_EMAILS_KEYWORDS_TOPICS.csv", index=False)
